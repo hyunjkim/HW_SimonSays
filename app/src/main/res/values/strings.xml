@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HW_1001_SimonSays</string>
+    <string-array name="simoncolors">
+        <item>@color/red</item>
+        <item >@color/blue</item>
+        <item >@color/green</item>
+        <item >@color/yellow</item>
+    </string-array>
+</resources>
