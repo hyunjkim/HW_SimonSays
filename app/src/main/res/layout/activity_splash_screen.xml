@@ -8,33 +8,6 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="#000000"
 tools:context="nyc.c4q.hyun.hw_1001_simonsays.MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/level"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#fff"
-            android:layout_weight="1"
-            android:gravity="right"
-            android:text="Level: "/>
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:textSize="30sp"
-            android:hint="score"
-            android:textColorHint="#8c8a8a"
-            android:layout_weight="1"
-            android:textStyle="italic"/>
-    </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -86,4 +59,32 @@ tools:context="nyc.c4q.hyun.hw_1001_simonsays.MainActivity">
 
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Score Board : "/>
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:textSize="30sp"
+            android:text=" score "
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:textColorHint="#8c8a8a"
+            android:textStyle="italic"/>
+    </LinearLayout>
 </LinearLayout>
+

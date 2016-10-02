@@ -1,5 +1,6 @@
 package nyc.c4q.hyun.hw_1001_simonsays;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,9 +20,15 @@ public class MainActivity extends AppCompatActivity {
         playbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent play = new Intent(MainActivity.this,SplashScreen.class);
-                startActivity(play);
+
+            startSplash();
+
             }
         });
+    }
+
+    public void startSplash(){
+        Intent intent = new Intent(this, SplashScreen.class);
+        startActivity(intent);
     }
 }

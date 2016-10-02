@@ -13,6 +13,9 @@
     <color name="yellow">#9fa625</color>
     <color name="default_yellow">#fffb00</color>
 
+    <color name="playbutton">#ffffff</color>
+    <color name="default_play">#c2bdbd</color>
+
 
 
 </resources>
