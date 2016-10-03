@@ -228,7 +228,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
 
         }else if(usersPatt.size()==(simonsPatt.size())){
             Context context = Main.this;
-            CharSequence note = "Level Up!";
+            CharSequence note = "Leveled Up!";
             int duration = Toast.LENGTH_SHORT;
             Log.d(TAG , "simonPatts.size == userpatts.size");
             if (usersPatt.equals(simonsPatt)) {

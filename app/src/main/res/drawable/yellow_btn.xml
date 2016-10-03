@@ -18,14 +18,3 @@
         android:height="100dp"/>
 
 </shape>
-
-
-
-    <!--android:topLeftRadius="50dp"-->
-    <!--android:topRightRadius="integer"-->
-    <!--android:bottomLeftRadius="integer"-->
-
-<!--<padding-->
-<!--android:left="integer"-->
-<!--android:top="integer"-->
-<!--android:right="integer"-->
