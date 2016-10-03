@@ -114,8 +114,8 @@ tools:context="nyc.c4q.hyun.hw_1001_simonsays.Main">
                 android:background="@drawable/middle_button"
                 android:layout_weight="1"
                 android:layout_gravity="center|center_vertical"
-                android:layout_width="240dp"
-                android:layout_height="200dp"/>
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
         </LinearLayout>
 
     </FrameLayout>
