@@ -7,28 +7,26 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class GameOver extends AppCompatActivity {
 
-    Button playbutton;
+    Button gameover;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gameover_activity);
 
-        playbutton = (Button) findViewById(R.id.play_button);
-        playbutton.setOnClickListener(new View.OnClickListener() {
+        gameover = (Button) findViewById(R.id.playagain_btn);
+        gameover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-            startSplash();
-
+                startMain();
             }
         });
     }
-
-    public void startSplash(){
-        Intent intent = new Intent(this, SplashScreen.class);
+    public void startMain(){
+        Intent intent = new Intent(this, Main.class);
         startActivity(intent);
     }
 }

@@ -2,6 +2,6 @@
 <selector
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true"
-          android:drawable="@drawable/red_pressed" /> <!--pressed -->
-    <item android:drawable="@drawable/red_btn"/> <!-- Normal -->
+        android:drawable="@color/playbutton" /> <!--pressed -->
+    <item android:drawable="@color/default_play"/> <!-- Normal -->
 </selector>
