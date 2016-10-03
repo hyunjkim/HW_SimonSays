@@ -12,13 +12,12 @@
     android:background="#000000"
     tools:context="nyc.c4q.hyun.hw_1001_simonsays.SplashScreen">
 
-
-
     <Button
         android:id="@+id/playagain_btn"
         android:layout_centerInParent="true"
         android:background="@drawable/playagain"
         android:text="Play Again"
+        android:textColor="#fff"
         android:textStyle="bold"
         android:textSize="50sp"
         android:layout_gravity="center"

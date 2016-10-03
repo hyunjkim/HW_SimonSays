@@ -2,6 +2,7 @@ package nyc.c4q.hyun.hw_1001_simonsays;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,7 @@ import static nyc.c4q.hyun.hw_1001_simonsays.R.id.yellow_button;
 
 
 public class Main extends AppCompatActivity implements View.OnClickListener {
+
     final static String TAG = "TAG";
     Button redbtn;
     Button bluebtn;
@@ -43,9 +45,15 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        buttonIdenifier();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                randomSimon();
+            }
+        }, 1000);
+
+        buttonIdentifier();
         // pick a random color and add into array
-        randomSimon();
     }
 // generate a random Color
     private void randomSimon() {
@@ -103,7 +111,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
     }
-    private void buttonIdenifier(){
+    private void buttonIdentifier(){
         redbtn = (Button) findViewById(red_button);
         redbtn.setOnClickListener(this);
         bluebtn = (Button) findViewById(blue_button);
@@ -148,6 +156,7 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
     // yellow color code
 
     private void yellowFlash() {
+
         Log.d(TAG,"yellowflashANIMATION");
         Animation mAnime = new AlphaAnimation(1, 0);
         mAnime.setDuration(90);
@@ -162,26 +171,34 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
     // We check the values for every time a color button is clicked
     @Override
     public void onClick(View v) {
+        MediaPlayer soundOne = MediaPlayer.create(getApplicationContext(), R.raw.sound_one);
+        MediaPlayer soundTwo = MediaPlayer.create(getApplicationContext(), R.raw.sound_two);
+        MediaPlayer soundThree = MediaPlayer.create(getApplicationContext(), R.raw.sound_three);
+        MediaPlayer soundFour = MediaPlayer.create(getApplicationContext(), R.raw.sound_four);
         switch (v.getId()) {
             case red_button:
+                soundOne.start();
                 Log.d("red button :" , "clickedred");
                 usersPatt.add("red");
 //                Toast(0);
                 checkValues();
                 break;
             case blue_button:
+                soundTwo.start();
                 Log.d("blue button :" , "clickedblue");
                 usersPatt.add("blue");
 //                Toast(1);
                 checkValues();
                 break;
             case  green_button:
+                soundThree.start();
                 Log.d("green button :" , "clickedgreen");
                 usersPatt.add("green");
 //                Toast(2);
                 checkValues();
                 break;
             case  yellow_button:
+                soundFour.start();
                 Log.d("yellow button :" , "clickedyellow");
                 usersPatt.add("yellow");
 //                Toast(3);
