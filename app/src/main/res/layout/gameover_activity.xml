@@ -16,7 +16,7 @@
         android:id="@+id/playagain_btn"
         android:layout_centerInParent="true"
         android:background="@drawable/playagain"
-        android:text="Play Again"
+        android:text="Game Over!\nPlay Again?"
         android:textColor="#fff"
         android:textStyle="bold"
         android:textSize="50sp"
