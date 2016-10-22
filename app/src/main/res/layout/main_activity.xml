@@ -84,14 +84,14 @@ tools:context="nyc.c4q.hyun.hw_1001_simonsays.Main">
                 android:textColor="#fff"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Score Board : "/>
+                android:text="Score Board: "/>
             <TextView
                 android:id="@+id/score"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center|center_vertical"
                 android:textSize="30sp"
-                android:text=" score "
+                android:text=" 0 "
                 android:textColor="#fff"
                 android:layout_weight="1"
                 android:textColorHint="#8c8a8a"
